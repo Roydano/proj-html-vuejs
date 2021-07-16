@@ -13,11 +13,18 @@ export default {
 }
 </script>
 
-<style lanh="scss">
+<style lang="scss">
 
     i{
         margin-right: 30px;
         color: #575c61;
+        cursor: pointer;
+
+        &:hover{
+            color: #787c7f;
+        }
+
+       
     }
 
 </style>
