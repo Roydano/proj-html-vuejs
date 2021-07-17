@@ -1,0 +1,22 @@
+@mixin changeButton(){
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(63, 63, 63, 0.7);
+    transform: translate(0, -50%);
+    transition: opacity 1s;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+@mixin btnSelectShop(){
+    padding: 10px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+}
