@@ -1,18 +1,26 @@
 <template>
   <nav class="d-flex nav">
+      <!-- iniizo lista -->
       <ul>
-          <li v-for="(item, index) in menu" :key="index"><a href="#">{{item}}</a><i class="fas fa-chevron-down"></i></li>
+          <!-- creato un ciclo per prendere tutti gli elementi della lista -->
+          <li v-for="(item, index) in menu" :key="index">
+              <a href="#">{{item.link}}</a>
+              <i v-if="item.dropdown != ''" class="fas fa-chevron-down"></i>
+          </li>
       </ul>
+      <!-- fine lista -->
   </nav>
 </template>
 
 <script>
+import ListItem from '@/data/ListItem.js'
 export default {
     name: 'MenuList',
 
     data(){
         return{
-            menu:['Home', 'Shop', 'Products', 'Categories', 'News', 'Elements']
+            //creato array che contiene tutti gli elementi della lista da ciclare
+            menu: ListItem,
 
         }
     }
@@ -23,10 +31,12 @@ export default {
 <style lang="scss">
 
     .nav{
+        // formattazione lista menu
         li{
             display: inline-block;
             margin: 0 10px;
-
+            
+            // formattazione del primo elemento della lista
             &:first-child{
                 border-top: 2px solid #427ed1;
 
@@ -39,6 +49,7 @@ export default {
                 } 
             }
 
+            // formattazione al passaggio sopra gli elementi
             &:hover a,
             &:hover i{
                 color: #427ed1;
