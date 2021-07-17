@@ -15,16 +15,19 @@ export default {
 
 <style lang="scss">
 
-    i{
+    .social_icon{
+        
+        i{
         margin-right: 30px;
         color: #575c61;
         cursor: pointer;
 
-        &:hover{
-            color: #787c7f;
-        }
+            &:hover{
+                color: #787c7f;
+            }
 
        
+        }
     }
 
 </style>

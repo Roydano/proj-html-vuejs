@@ -41,53 +41,55 @@ export default {
     height: 50px;
     line-height: 48px;
     border-bottom: 1px solid lightgrey;
-  }
 
+    
+    // formattazione lista sezione di destra
+    li{
+      display: inline-block;
+      padding: 0 15px;
+      border-right: 1px solid lightgrey;
+      font-size: 14px;
+      color: #a0a5a5;
+      cursor: pointer;
 
-  // formattazione lista sezione di destra
-  li{
-    display: inline-block;
-    padding: 0 15px;
-    border-right: 1px solid lightgrey;
-    font-size: 14px;
-    color: #a0a5a5;
-    cursor: pointer;
-
-    // formattazione per ultimo elemento della lista
-    &:last-child{
-      border-right: none;
-      padding-left: 50px;
-      text-transform: uppercase;
-      color: #575c61;
-
-      // formattazione per carrello
-      i{
-        margin-right: 10px;
-        font-size: 12px;
+      // formattazione per ultimo elemento della lista
+      &:last-child{
+        border-right: none;
+        padding-left: 50px;
+        text-transform: uppercase;
         color: #575c61;
 
-        // formattazione per freccia cart
-        &:last-child{
-          margin-left: 10px;
-          font-size: 16px;
+        // formattazione per carrello
+        i{
+          margin-right: 10px;
+          font-size: 12px;
+          color: #575c61;
+
+          // formattazione per freccia cart
+          &:last-child{
+            margin-left: 10px;
+            font-size: 16px;
+          }
         }
       }
-    }
-    
-    // passaggio con il mouse sui pulsanti
-    &:hover{
-      background-color: #f6f6f6;
-      color: #575c61;
+      
+      // passaggio con il mouse sui pulsanti
+      &:hover{
+        background-color: #f6f6f6;
+        color: #575c61;
+      }
+
+      // formattazione freccia my account
+      i{
+        margin-right: 0;
+        margin-left: 15px;
+        font-size: 10px;
+        color: #a0a5a5;
+
+      }
     }
 
-    // formattazione freccia my account
-    i{
-      margin-right: 0;
-      margin-left: 15px;
-      font-size: 10px;
-      color: #a0a5a5;
 
-    }
   }
   
 
