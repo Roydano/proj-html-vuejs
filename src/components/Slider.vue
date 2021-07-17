@@ -3,15 +3,22 @@
 
     <div class="box_img">
 
+        <!-- inizio bottone di sinistra -->
         <div class="btn_left">
             <i @click="backPhoto" class="fas fa-chevron-left"></i>
         </div>
+        <!-- fine bottone di sinistra -->
 
+        <!-- inizio immagine home -->
         <div class="img">
+            <!--inizio immagine -->
             <img :src="getImg(slide[counter].img)" alt="">
+            <!-- fine immagine -->
+
+            <!-- inizio informazione immagine -->
             <div class="info text-center">
                 <h2>{{slide[counter].title}}</h2>
-                <h4 class="text-uppercase">{{slide[counter].subtitle}}</h4>
+                <h4 class="text-uppercase fw-bolder">{{slide[counter].subtitle}}</h4>
                 <div v-if="slide[counter].button2 != '' " class="btn d-flex justify-content-center mt-3">
                     <div class="btn_choise me-3">{{slide[counter].button1}}</div>
                     <div class="btn_choise">{{slide[counter].button2}}</div>
@@ -20,11 +27,15 @@
                     <div class="btn_choise me-3">{{slide[counter].button1}}</div>
                 </div>
             </div>
+            <!-- fine informazioni immagine -->
         </div>
-        
+        <!-- fine immagine home -->
+
+        <!-- iniizo bottone di destra -->
         <div class="btn_right">
             <i  @click="nextPhoto"  class="fas fa-chevron-right"></i>
         </div>
+        <!-- fine bottone di destra -->
 
     </div>
 
@@ -110,17 +121,20 @@ export default {
     #home_slider{
         display: flex;
 
+        // formattazione contenitore immagine
         .box_img{
             width: 100%;
             height: 500px;
             background-color: red;
             position: relative;
 
+            // formattazione pulsanti cambio immagine al passaggio sopra
             &:hover .btn_left,
             &:hover .btn_right{
                 opacity: 1;
             }
 
+            // formattazione immagine
             .img{
                 width: 100%;
                 height: 500px;
@@ -131,6 +145,7 @@ export default {
                 }
             }
 
+            // formattazione bottoni cambio immagine con mixin
             .btn_left{
                 left:0;
                 @include changeButton()
@@ -142,6 +157,7 @@ export default {
 
             }
 
+            // formattazione info immagine
             .info{
                 position: absolute;
                 left: 50%;
@@ -154,6 +170,7 @@ export default {
                     font-weight: bold;
                 }
 
+                // formattazione pulsanti delle info immagine
                 .btn_choise{
 
                     &:hover{
