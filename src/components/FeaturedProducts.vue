@@ -175,10 +175,12 @@ export default {
             }
         }
 
+        // contenitore prodotto
         .img_box_dropdown{
             height: 500px;
             width: 100%;
             
+            // formattazione per sfondo sfumato
             .img_box_product{
                 position: relative;
                 height: 260px;
@@ -197,6 +199,7 @@ export default {
                     transition: opacity 1s;
                 }
 
+                // formattazione dettagli che compaiono quando passo sopra la foto
                 .action{
                     display: none;
                     position: absolute;
