@@ -1,7 +1,7 @@
 <template>
   <section id="best-seller" class="my_container">
-      <!-- inizio sezione titolo -->
-      <div class="row d-flex text-center my_margin">
+        <!-- inizio sezione titolo -->
+        <div class="row d-flex text-center my_margin">
             <div class="col-lg-4">
                 <div class="line"></div>
             </div>
@@ -11,22 +11,36 @@
             <div class="col-lg-4">
                 <div class="line"></div>
             </div>
-      </div>
-      <!-- fine sezione titolo -->
+        </div>
+        <!-- fine sezione titolo -->
 
-      <!-- inizio sezione sottotitolo -->
-      <div class="row">
-          <div class="col text-center">
+        <!-- inizio sezione sottotitolo -->
+        <div class="row">
+            <div class="col text-center">
                 <p class="p_style">Must have products from our top sellers</p>
-          </div>
-      </div>
-      <!-- fine sezione sottotitolo -->
+            </div>
+        </div>
+        <!-- fine sezione sottotitolo -->
+
+        <!-- inizio del carousel -->
+        <h1>QUI CI FAREMO IL CAROUSEL!!!!!!!!!!!</h1>
+        
   </section>
 </template>
 
 <script>
+
+
 export default {
-    name: 'BestSeller'
+    name: 'BestSeller',
+
+    
+
+    data(){
+        return{
+
+        }
+    },
 
 }
 </script>
@@ -49,5 +63,7 @@ export default {
             
         }
     }
+
+    
 
 </style>

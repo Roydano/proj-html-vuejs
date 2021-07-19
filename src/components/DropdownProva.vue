@@ -29,7 +29,7 @@
 import ListItem from '@/data/ListItem.js'
 
 export default {
-    name: 'SlideProva',
+    name: 'DropdownProva',
 
     data(){
         return{
