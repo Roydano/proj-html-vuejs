@@ -1,36 +1,36 @@
 export default[
     {
-        img: 'img/black_elegant_leather_jacket-200x260.jpg',
-        title: 'Black Leather Jacket',
-        tag: 'Men, Jackets, Jeans',
-        priceFull: '$235',
-        priceLower: '$200'
+        img: 'img/spring_printed_dress-200x260.jpg',
+        title: 'Spring Printed Dress',
+        tag: 'Dress, Women',
+        priceFull: '',
+        priceLower: '$47'
     
     },
 
     {   
-        img: 'img/black_leather_suit-200x260.jpg',
-        title: 'Black Leather Suit',
-        tag: 'Jackets, Men',
+        img: 'img/modern_love_tee-200x260.jpg',
+        title: 'Modern Love Tee',
+        tag: 'T-Shirts, Women',
         priceFull: '',
-        priceLower: '$176'
+        priceLower: '$68'
     },
     
     {
-        img: 'img/blue_jacket_and_white_stripe_tee-200x260.jpg',
-        title: 'Blue Jacket & Stripe Tee',
-        tag: 'Men, Jackets, Suits',
+        img: 'img/black_leather_jacket-200x260.jpg',
+        title: 'Black Jacket',
+        tag: 'Jackets, Women',
         priceFull: '',
-        priceLower: '$580'
+        priceLower: '$125'
     
     },
 
     {
-        img: 'img/modern_black_leather_suit-200x260.jpg',
-        title: 'Modern Black Leather Suit',
-        tag: 'Jackets, Men',
+        img: 'img/hipster_black_top-200x260.jpg',
+        title: 'Hipster Black Top',
+        tag: 'T-Shirts, Women',
         priceFull: '',
-        priceLower: '$96'
+        priceLower: '$57'
     }
 
 
