@@ -24,7 +24,7 @@
 
       <!-- inizio sezionebottoni -->
       <div class="row shop_genre ">
-          <div class="col d-flex justify-content-center">
+          <div class="col-12 d-flex justify-content-center">
                 <div v-for="(item, index) in type" :key="index" class="dropdown">
                     <button @click="value = item"  type="button" data-bs-toggle="dropdown" aria-expanded="false" :value="value">
                         {{item}}
