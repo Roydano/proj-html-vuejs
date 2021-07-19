@@ -1,6 +1,7 @@
 <template>
   <section class="container-fluid">
       <div class="row">
+          <!-- inizio box con prodotti di stagione -->
           <div v-for="(item, index) in season" :key="index" class="col-4 season_coll">
                 <div class="img_box">
                     <img :src="getImg(item.img)" :alt="item.title">
@@ -13,6 +14,7 @@
                     </div>
                 </div>
           </div>
+          <!-- fine box con prodotti di stagione -->
       </div>
   </section>
 </template>
@@ -65,7 +67,6 @@ export default {
     .season_coll{
         height: 500px;
         width: 100%;
-        background-color: red;
         position: relative;
         padding: 0 !important;
         overflow: hidden;
