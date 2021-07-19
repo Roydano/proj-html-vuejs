@@ -7,6 +7,7 @@
               <a href="#">{{item.link}}</a>
               <i v-if="item.dropdown != ''" class="fas fa-chevron-down"></i>
           </li>
+          
       </ul>
       <!-- fine lista -->
   </nav>
@@ -68,5 +69,7 @@ export default {
             }
         }
     }
+
+
 
 </style>

@@ -16,7 +16,48 @@ a{
 
 }
 
+
+// stili formattazione generici
+
+// misure del container
 .my_container{
     max-width: 70%;
     margin: 0 auto;
 }
+
+
+// font 36px
+.h_size_36{
+    font-size: 36px;
+}
+
+// stile per il paragrafo del sottotilo
+.p_style{
+    color: #575c61
+}
+
+// stile per i tag dei vestiti
+.subtitle_tag_clothes{
+    color: #575c61;
+    font-size: 12px;
+}
+
+// stile prezzo scontato
+.price_full{
+    text-decoration: line-through;
+    color: #427ed1;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.price_official{
+    color: #427ed1;
+}
+
+// margine negativo
+.neg_mb_2{
+    margin-bottom: -2px;
+}
+
+
+
