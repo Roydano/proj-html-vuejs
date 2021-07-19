@@ -16,6 +16,14 @@
         <PriceOff/>
         <!-- fine sezione sconti -->
 
+        <!-- inizio sezione new arrivals -->
+        <NewArrivals/>
+        <!-- fine sezione new arrivals -->
+
+        <!-- Inizio testimonianze -->
+        <Testimonial/>
+        <!-- fine testimonianze -->
+
   </main>
 </template>
 
@@ -24,6 +32,10 @@ import FeaturedProducts from '@/components/FeaturedProducts.vue'
 import SeasonCollection from '@/components/SeasonCollection.vue'
 import BestSeller from '@/components/BestSeller.vue'
 import PriceOff from '@/components/PriceOff.vue'
+import NewArrivals from '@/components/NewArrivals.vue'
+import Testimonial from '@/components/Testimonial.vue'
+
+
 
 
 
@@ -37,20 +49,10 @@ export default {
         FeaturedProducts,
         SeasonCollection,
         BestSeller,
-        PriceOff
+        PriceOff,
+        NewArrivals,
+        Testimonial
     },
-
-    data(){
-        return{
-            settings:{
-                "focusOnSelect": true,
-                "infinite": true,
-                "slidesToShow": 5,
-                "slidesToScroll": 1,
-                "speed": 500
-            }
-        }
-    }
 
 }
 </script>

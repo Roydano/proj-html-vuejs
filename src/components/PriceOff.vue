@@ -1,6 +1,7 @@
 <template id="price-off">
   <div class="background mt-5">
       <div class="my_container">
+          <!-- creazione box contenitore -->
           <div class="row justify-content-between py-5">
               <div v-for="(item, index) in priceOff" :key="index" class="col-6 position-relative">
                     <div class="img_box">
