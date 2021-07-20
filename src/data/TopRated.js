@@ -23,7 +23,7 @@ export default[
         priceFull: '$47',
         priceLower:'',
         sign:'',
-        img: 'img/hipster_black_top-120x156.jpg'
+        img: 'img/spring_printed_dress-120x156.jpg'
     }
     
 

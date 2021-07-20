@@ -34,11 +34,6 @@ export default {
 <style lang="scss">
     #footer-top{
         background-color: #303337;
-        
-
-        .padding{
-            padding: 80px 0;
-        }
 
         // formattazione icona messaggio
         .icon_msg{

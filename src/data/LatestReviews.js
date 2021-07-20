@@ -1,29 +1,29 @@
 export default[
     {
-        title: 'Black Jacket',
-        star: false,
-        priceFull: '',
-        priceLower:'',
-        sign:'by admin',
-        img: 'img/black_leather_jacket-120x156.jpg'
-    },
-
-    {
         title: 'Black Leather Jacket',
         star: true,
         priceFull: '',
         priceLower:'',
-        sign:'by Beardman',
+        sign:'by admin',
         img: 'img/black_elegant_leather_jacket-120x156.jpg'
     },
 
     {
-        title: 'Hipster Black Top',
-        star: false,
+        title: 'Leather Gloves',
+        star: true,
+        priceFull: '',
+        priceLower:'',
+        sign:'by Beardman',
+        img: 'img/leather_gloves-120x156.jpg'
+    },
+
+    {
+        title: 'Spring Printed Dress',
+        star: true,
         priceFull: '',
         priceLower:'',
         sign:'by admin',
-        img: 'img/hipster_black_top-120x156.jpg'
+        img: 'img/spring_printed_dress-120x156.jpg'
     }
     
 
