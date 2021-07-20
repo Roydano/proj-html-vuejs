@@ -166,7 +166,7 @@ export default {
                 color: white;
 
                 h2{
-                    font-size: 80px;
+                    font-size: 75px;
                     font-weight: bold;
                 }
 

@@ -34,6 +34,10 @@
         <ShowProduct/>
         <!-- fine lista prodotti in vetrina -->
 
+        <!-- inizio loghi -->
+        <Brand/>
+        <!-- fine loghi -->
+
 
   </main>
 </template>
@@ -47,6 +51,8 @@ import NewArrivals from '@/components/NewArrivals.vue'
 import Testimonial from '@/components/Testimonial.vue'
 import Blog from '@/components/Blog.vue'
 import ShowProduct from '@/components/ShowProduct.vue'
+import Brand from '@/components/Brand.vue'
+
 
 
 
@@ -69,7 +75,8 @@ export default {
         NewArrivals,
         Testimonial,
         Blog,
-        ShowProduct
+        ShowProduct,
+        Brand
     },
 
 }

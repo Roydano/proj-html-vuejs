@@ -1,6 +1,6 @@
 <template >
     <section id="testimonial">
-        <carousel class="bg_sfondo text-center" :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="false">
+        <carousel class="bg_sfondo text-center" :per-page="1" :mouse-drag="false">
             <slide>
                 <div class="img_testimonial my-5">
                     <img src="@/assets/img/man_testimonial.png" alt="man testimonial">
