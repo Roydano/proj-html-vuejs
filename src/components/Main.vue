@@ -24,6 +24,10 @@
         <Testimonial/>
         <!-- fine testimonianze -->
 
+        <!-- iniizo blog -->
+        <Blog/>
+        <!-- fine blog -->
+
   </main>
 </template>
 
@@ -34,6 +38,8 @@ import BestSeller from '@/components/BestSeller.vue'
 import PriceOff from '@/components/PriceOff.vue'
 import NewArrivals from '@/components/NewArrivals.vue'
 import Testimonial from '@/components/Testimonial.vue'
+import Blog from '@/components/Blog.vue'
+
 
 
 
@@ -51,7 +57,8 @@ export default {
         BestSeller,
         PriceOff,
         NewArrivals,
-        Testimonial
+        Testimonial,
+        Blog
     },
 
 }

@@ -15,8 +15,8 @@
         <!-- fine sezione titolo -->
 
         <!-- inizio sezione sottotitolo -->
-        <div class="row">
-            <div class="col text-center">
+        <div class="row my_margin-r0">
+            <div class="col-12 text-center">
                 <p class="p_style">Brand new product from top designers</p>
             </div>
         </div>
@@ -38,6 +38,10 @@ export default {
 <style lang="scss">
     #new-arrivals{
 
+        .my_margin-r0{
+            margin-right: 0 !important;
+        }
+
         // margini per distanziare la sezione
         .my_margin{
             margin-top: 70px;
@@ -47,10 +51,13 @@ export default {
             // linee orizzontali del titolo
             .line{
             height: 1px;
-            width: 100%;
             background-color: lightgrey;
             } 
             
+        }
+
+        .VueCarousel-dot:focus{
+            outline: none;
         }
     }
 
