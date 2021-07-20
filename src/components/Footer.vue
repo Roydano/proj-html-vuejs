@@ -10,6 +10,7 @@
       <!-- fine footer centro -->
 
       <!-- inizio footer bottom -->
+      <FooterBottom/>
       <!-- fine footer bottom -->
 
   </footer>
@@ -18,13 +19,16 @@
 <script>
 import FooterTop from '@/components/FooterTop.vue'
 import FooterCenter from '@/components/FooterCenter.vue'
+import FooterBottom from '@/components/FooterBottom.vue'
+
 
 export default {
     name: 'Footer',
 
     components:{
         FooterTop,
-        FooterCenter
+        FooterCenter,
+        FooterBottom
 
     }
 
