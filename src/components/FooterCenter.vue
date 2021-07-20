@@ -19,18 +19,32 @@
                 <!-- fine prima colonna con logo e dettagli azienda -->
 
                 <!-- inizio seconda colonna con prodotti -->
-                <div class="col padding">
+                <div class="col-3 padding">
                     <h6 class="pb-3 text-uppercase">top rated products</h6>
                     <CardProductList :product="topRated" class="top_rated"/>
                 </div>
                 <!-- fine seconda colonna con prodotti -->
 
                 <!-- iniizo terza colonna con post recenti -->
-                <div class="col-3"></div>
+                <div class="col padding ms-3">
+                    <h6 class="pb-3 text-uppercase">recent posts</h6>
+                     <ul>
+                        <li v-for="item in posts" :key="item" class="post">
+                            <i class="fas fa-chevron-right"></i><span>{{item}}</span>
+                        </li>
+                    </ul>
+
+                </div>
                 <!-- fine terza colonna con post recenti -->
 
                 <!-- iniizo quarta colonna con tag -->
-                <div class="col-3"></div>
+                <div class="col-3 padding ps-3">
+                    <h6 class="pb-3 text-uppercase">tags</h6>
+                    <div class="tag d-flex flex-wrap">
+                        <span v-for="item in tags" :key="item" class="my_tag">{{item}}</span>
+                    </div>
+                   
+                </div>
                 <!-- fine quarta colonna con tag -->
           </div>
       </div>
@@ -41,6 +55,8 @@
 import SocialIcon from '@/components/SocialIcon.vue'
 import TopRated from '@/data/TopRated.js'
 import CardProductList from '@/components/CardProductList.vue'
+import Tags from '@/data/Tags.js'
+
 
 export default {
     name: 'FooterCenter',
@@ -48,7 +64,16 @@ export default {
     data(){
         return{
 
-            topRated: TopRated
+            topRated: TopRated,
+            posts: [
+                'Aenean lobortis sapien enim viverra',
+                'Duis ac massa semper maximus',
+                'Nunc fermint nulla eu justo sem id',
+                'Aliquam posuere magna eget nibh',
+                'Cras ac nulla ac consecte rutrum',
+                'Fusce mattis nunc ut aliquam'
+            ],
+            tags: Tags
         }
     },
 
@@ -72,6 +97,10 @@ export default {
             font-weight: bold;
         }
 
+        ul{
+                padding-left: 0;
+            }
+
         // inizio formattazione colonna con logo e dati azienda
         .logo{
             img{
@@ -88,18 +117,18 @@ export default {
         i{
             margin: 6px;
             color: #eaeaea;
+
+            &:hover{
+                color: #c3c4c5;
+            }
         }
         // fine formattazione colonna con logo e dati azienda
 
         // inizio formattazione colonna con prodotti
         .top_rated{
 
-            ul{
-                padding-left: 0;
-            }
-
             li{
-                color: white;
+                color: #eaeaea;;
 
                 .my_bb{
                     border-bottom: 1px solid #35383c;
@@ -120,7 +149,42 @@ export default {
         // fine formattazione colonna con prodotti
 
         // inizio sezione lista post
+        .post{
+            color: #eaeaea;
+            font-size: 13px;
+            border-bottom: 1px solid #35383c;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            cursor: pointer;
+                
+
+            i{
+                font-size: 11px;
+            }
+
+            &:hover,
+            &:hover i{
+                color: #427ed1;
+            }
+            
+        }
         // fine sezione lista post
+
+        // inizio sezione tag
+        .my_tag{
+            color: #eaeaea;
+             font-size: 13px;
+             border: 1px solid #35383c;
+             padding: 5px 8px;
+             margin: 2px;
+             cursor: pointer;
+             transition: background-color 1s;
+
+             &:hover{
+                 background-color: #427ed1;
+             }
+        }
+        // fine sezione tag
     }
 
 </style>

@@ -37,16 +37,16 @@ export default {
 
         // formattazione icona messaggio
         .icon_msg{
-            height: 50px;
-            width: 50px;
+            height: 70px;
+            width: 70px;
             background-color: #2b2e32;
             border-radius: 50%;
             text-align: center;
-            line-height: 50px;
+            line-height: 80px;
 
             i{
                 color: #74797f;
-                font-size: 20px;
+                font-size: 30px;
             }
         }
 
@@ -56,6 +56,7 @@ export default {
             color: white;
             font-weight: bold;
             margin-left: 10px;
+            font-size: 25px;
         }
 
         // formattazione casella di input
