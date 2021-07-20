@@ -67,7 +67,16 @@ export default {
             img{
                 width: 100%;
             }
+
+           
+            .title{
+                cursor: pointer;
+                &:hover{
+                    color: #427ed1;
+                }
+            }
         }
+        
     }
 
 </style>

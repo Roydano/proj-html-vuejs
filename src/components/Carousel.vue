@@ -17,7 +17,7 @@
 
 
     <div>
-        <VueSlickCarousel>
+        <VueSlickCarousel v-bind="settings">
             <div><h3>1</h3></div>
             <div><h3>2</h3></div>
             <div><h3>3</h3></div>
@@ -29,7 +29,6 @@
             <div><h3>9</h3></div>
             <div><h3>10</h3></div>
         </VueSlickCarousel>
-        <button @click="showNext">show me the next</button>
     </div>
 
 
@@ -42,7 +41,7 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 
 export default {
-    name: 'Crousel',
+    name: 'Carousel',
     components:{
         VueSlickCarousel
     },
@@ -59,18 +58,13 @@ export default {
         }
     },
 
-    methods:{
-        showNext() {
-        this.$refs.carousel.next()
-      },
-    }
-
 }
 </script>
 
 <style lang="scss">
 
-    .slick-prev::before {
-    }
+button{
+    display: none !important;
+}
 
 </style>

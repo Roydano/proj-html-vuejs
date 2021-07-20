@@ -3,52 +3,62 @@
       <div class="background_brand py-5">
             <h6 class="text-center text-uppercase my_letter_spacing_5 py-3">brand logos</h6>
             <div class="my_container">
-                <carousel :per-page="5">
-                    <slide data-index="0" data-name="forest" class="my_margin">
+                <VueSlickCarousel v-bind="settings">
+                    
+                    <div>
                         <img src="@/assets/img/b_logotype_1.png" alt="forest logo">
-                    </slide>
+                    </div>
 
-                    <slide data-index="1" data-name="badge">
+                    <div>
                         <img src="@/assets/img/b_logotype_2.png" alt="badge logo">
-                    </slide>
+                    </div>
 
-                    <slide data-index="2" data-name="beard fashion">
+                    <div>
                         <img src="@/assets/img/b_logotype_3.png" alt="beard fashion logo">
-                    </slide>
+                    </div>
 
-                    <slide data-index="3" data-name="hype">
+                    <div>
                         <img src="@/assets/img/b_logotype_4.png" alt="hype logo">
-                    </slide>
+                    </div>
 
-                    <slide data-index="4" data-name="aeq">
+                    <div>
                         <img src="@/assets/img/b_logotype_5.png" alt="a and q logo">
-                    </slide>
+                    </div>
 
-                    <slide data-index="5" data-name="authentic">
+                    <div>
                         <img src="@/assets/img/b_logotype_6.png" alt="authentic logo">
-                    </slide>
+                    </div>
 
-                    <slide data-index="6" data-name="the yard">
+                    <div>
                         <img src="@/assets/img/b_logotype_7.png" alt="the yard logo">
-                    </slide>
-                </carousel>
+                    </div>
+
+                    
+                </VueSlickCarousel>
+
+
             </div>
         </div>
   </section>
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+
 export default {
     name: 'Brand',
+    components:{
+        VueSlickCarousel
+    },
 
     data(){
         return{
             settings:{
-                "centerMode": true,
-                "centerPadding": "20px",
                 "focusOnSelect": true,
                 "infinite": true,
-                "slidesToShow": 3,
+                "slidesToShow": 5,
+                "slidesToScroll": 1,
                 "speed": 500
             }
         }
@@ -65,7 +75,7 @@ export default {
         }
 
         button{
-            display: none;
+            display: none !important;
         }
         
         .VueCarosel-slide{
