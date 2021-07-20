@@ -1,5 +1,5 @@
 <template>
-  <section id="blog" class="my_container">
+  <section id="blog" class="my_container pb-5">
         <!-- inizio sezione titolo -->
         <div class="row d-flex text-center my_margin">
             <div class="col-lg-4">

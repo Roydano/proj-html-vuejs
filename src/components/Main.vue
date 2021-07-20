@@ -28,6 +28,13 @@
         <Blog/>
         <!-- fine blog -->
 
+        <hr class="my-5">
+
+        <!-- inizio lista prodotti in vetrina -->
+        <ShowProduct/>
+        <!-- fine lista prodotti in vetrina -->
+
+
   </main>
 </template>
 
@@ -39,6 +46,9 @@ import PriceOff from '@/components/PriceOff.vue'
 import NewArrivals from '@/components/NewArrivals.vue'
 import Testimonial from '@/components/Testimonial.vue'
 import Blog from '@/components/Blog.vue'
+import ShowProduct from '@/components/ShowProduct.vue'
+
+
 
 
 
@@ -58,7 +68,8 @@ export default {
         PriceOff,
         NewArrivals,
         Testimonial,
-        Blog
+        Blog,
+        ShowProduct
     },
 
 }
