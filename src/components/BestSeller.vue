@@ -15,7 +15,7 @@
         <!-- fine sezione titolo -->
 
         <!-- inizio sezione sottotitolo -->
-        <div class="row">
+        <div class="row mb-5">
             <div class="col text-center">
                 <p class="p_style">Must have products from our top sellers</p>
             </div>
@@ -23,16 +23,22 @@
         <!-- fine sezione sottotitolo -->
 
         <!-- inizio del carousel -->
-        <h1>QUI CI FAREMO IL CAROUSEL!!!!!!!!!!!</h1>
+        <CarouselMini/>
         
   </section>
 </template>
 
 <script>
+import CarouselMini from '@/components/CarouselMini.vue'
 
 
 export default {
     name: 'BestSeller',
+
+    components:{
+        CarouselMini
+
+    },
 
     
 

@@ -23,14 +23,21 @@
         <!-- fine sezione sottotitolo -->
 
         <!-- inizio del carousel -->
-        <h1>QUI CI FAREMO IL CAROUSEL!!!!!!!!!!!</h1>
+        <Carousel class="my-5"/>
         
   </section>
 </template>
 
 <script>
+import Carousel from '@/components/Carousel.vue'
+
 export default {
-    name: 'NewArrivals'
+    name: 'NewArrivals',
+
+    components:{
+        Carousel
+
+    },
 
 }
 </script>

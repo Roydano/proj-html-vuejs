@@ -11,10 +11,6 @@
     <!-- inizio footer -->
     <Footer/>
     <!-- fine footer -->
-
-
-    <!-- prova -->
-    <Carousel/>
     
   </div>
 </template>
@@ -23,7 +19,6 @@
 import Header from '@/components/Header.vue'
 import Main from '@/components/Main.vue'
 import Footer from '@/components/Footer.vue'
-import Carousel from '@/components/Carousel.vue'
 
 
 
@@ -34,7 +29,6 @@ export default {
     Header,
     Main,
     Footer,
-    Carousel
   }
 }
 </script>
