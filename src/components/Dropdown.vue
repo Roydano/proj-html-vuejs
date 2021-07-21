@@ -135,6 +135,7 @@ export default {
             width: 250px;
             background: white;
             padding: 20px 30px;
+            cursor: pointer;
 
             h6{
                 font-weight: bold;
