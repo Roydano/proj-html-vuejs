@@ -13,7 +13,7 @@
           <!-- inizio sezione di destra -->
           <div class="nav_bar d-flex">
             <!-- iniizo menu -->
-            <DropdownProva/>
+            <Dropdown/>
             <!-- fine menu -->
 
             <!-- inizio bottone -->
@@ -40,13 +40,13 @@
 </template>
 
 <script>
-import DropdownProva from '@/components/DropdownProva.vue'
+import Dropdown from '@/components/Dropdown.vue'
 
 export default {
   name: 'HeaderBottom',
 
   components:{
-    DropdownProva
+    Dropdown
   }
 
 }

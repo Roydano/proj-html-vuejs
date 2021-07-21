@@ -67,7 +67,7 @@
 import ListItem from '@/data/ListItem.js'
 
 export default {
-    name: 'DropdownProva',
+    name: 'Dropdown',
 
     data(){
         return{
