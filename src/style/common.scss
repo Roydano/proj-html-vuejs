@@ -59,6 +59,17 @@ a{
     margin-bottom: -2px;
 }
 
+// margine asse x
+.my_mx{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+// margine destro
+.my_mr_25{
+    margin-right: 20px;
+}
+
 // colore delle stelle
 .my_color_star{
     color:#427ed1;
@@ -90,4 +101,12 @@ a{
     padding: 80px 0;
 }
 
+// larghezze
+.my_w200{
+    width: 200px;
+}
+
+.my_w100{
+    width: 100px;
+}
 
