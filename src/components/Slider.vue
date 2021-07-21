@@ -19,10 +19,12 @@
             <div class="info text-center">
                 <h2>{{slide[counter].title}}</h2>
                 <h4 class="text-uppercase fw-bolder">{{slide[counter].subtitle}}</h4>
+                <!-- se lo slider ha due bottoni -->
                 <div v-if="slide[counter].button2 != '' " class="btn d-flex justify-content-center mt-3">
                     <div class="btn_choise me-3">{{slide[counter].button1}}</div>
                     <div class="btn_choise">{{slide[counter].button2}}</div>
                 </div>
+                <!-- se lo slider ha un bottone -->
                 <div v-else class="btn d-flex justify-content-center mt-3">
                     <div class="btn_choise me-3">{{slide[counter].button1}}</div>
                 </div>
@@ -80,11 +82,12 @@ export default {
     },
 
     methods: {
-        //?funzione per fare leggere il percorso delle immagini dal webpack
+        //funzione per fare leggere il percorso delle immagini dal webpack
         getImg(img) {
         return require('../assets/'+ img);
         },
 
+        // funzione per mandare avanti la foto
         nextPhoto(){
 
             if(this.counter == this.slide.length - 1){
@@ -97,6 +100,7 @@ export default {
             
         },
 
+        // funzione per mandare indietro la foto
         backPhoto(){
 
             if(this.counter == 0){

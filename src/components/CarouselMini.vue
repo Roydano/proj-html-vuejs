@@ -113,6 +113,7 @@ export default {
             display: none !important;
         }
 
+        // formattazione bottoni
         .btn_right{
             float: right;
             clear: both;
@@ -136,6 +137,7 @@ export default {
             }
         }
 
+        // formattazione carosello
         .img_box_carousel{
             position: relative;
             height: 260px;

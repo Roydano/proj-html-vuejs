@@ -47,10 +47,11 @@
                 </div>
                 <h6 class="mt-3 fw-bold neg_mb_2">{{obj.title}}</h6>
                 <span class="subtitle_tag_clothes">{{obj.tag}}</span>
+                <!-- se l'oggetto non è scotato -->
                 <div v-if="obj.priceFull == ''" class="price">
                     <span class="price_official">{{obj.priceLower}}</span>
-                   
                 </div>
+                <!-- se l'oggetto è scontato -->
                 <div v-else class="price">
                     <span class="price_full">{{obj.priceFull}}</span>
                     <span class="price_official">{{obj.priceLower}}</span>
@@ -70,10 +71,11 @@
                 </div>
                 <h6 class="mt-3 fw-bold neg_mb_2">{{obj.title}}</h6>
                 <span class="subtitle_tag_clothes">{{obj.tag}}</span>
+                <!-- se l'oggetto non è scotato -->
                 <div v-if="obj.priceFull == ''" class="price">
                     <span class="price_official">{{obj.priceLower}}</span>
-                   
                 </div>
+                <!-- se l'oggetto è scotato -->
                 <div v-else class="price">
                     <span class="price_full">{{obj.priceFull}}</span>
                     <span class="price_official">{{obj.priceLower}}</span>
@@ -93,10 +95,11 @@
                 </div>
                 <h6 class="mt-3 fw-bold neg_mb_2">{{obj.title}}</h6>
                 <span class="subtitle_tag_clothes">{{obj.tag}}</span>
+                <!-- se l'oggetto non è scotato -->
                 <div v-if="obj.priceFull == ''" class="price">
                     <span class="price_official">{{obj.priceLower}}</span>
-                   
                 </div>
+                <!-- se l'oggetto è scotato -->
                 <div v-else class="price">
                     <span class="price_full">{{obj.priceFull}}</span>
                     <span class="price_official">{{obj.priceLower}}</span>

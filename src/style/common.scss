@@ -17,7 +17,7 @@ a{
 }
 
 
-// stili formattazione generici
+//! STILI FORMATTAZIONE GLOBALI
 
 // misure del container
 .my_container{
@@ -26,15 +26,94 @@ a{
 }
 
 
-// font 36px
+//* REGOLE PER I FONT
+
 .h_size_36{
     font-size: 36px;
 }
+
+.my_font_size-12{
+    font-size: 12px;
+
+}
+
+//? REGOLE PER I PARAGRAFI
 
 // stile per il paragrafo del sottotilo
 .p_style{
     color: #575c61
 }
+
+//? REGOLE PER L'ALTEZZA E LA LARGHEZZA
+
+.my_h100{
+    height: 100px;
+}
+
+.my_w100{
+    width: 100px;
+}
+
+.my_w200{
+    width: 200px;
+}
+
+
+//? REGOLE PER I MARGINI
+
+// margine negativo
+.neg_mb_2{
+    margin-bottom: -2px;
+}
+
+// margine asse x
+.my_mx{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+// margine destro 0
+.my_margin-r0{
+    margin-right: 0 !important;
+}
+
+// margine destro
+.my_mr_25{
+    margin-right: 20px;
+}
+
+
+
+
+//? ALTRI STILI GLOBALI IN GENERALE
+
+// colore delle stelle
+.my_color_star{
+    color:#427ed1;
+}
+
+// bordo basso
+.my_bb{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+// spazio tra lettere di una parola
+.my_letter_spacing_5{
+    letter-spacing: 5px;
+}
+
+// padding sull'asse delle y
+.padding{
+    padding: 80px 0;
+}
+
+// dimensione carattere
+.my_fs_13{
+    font-size: 13px;
+}
+
 
 // stile per i tag dei vestiti
 .subtitle_tag_clothes{
@@ -50,71 +129,10 @@ a{
     margin-right: 10px;
 }
 
+// colore del prezzo delle card
 .price_official{
     color: #427ed1;
 }
 
-// margine negativo
-.neg_mb_2{
-    margin-bottom: -2px;
-}
 
-// margine asse x
-.my_mx{
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-}
-
-// margine destro
-.my_mr_25{
-    margin-right: 20px;
-}
-
-// colore delle stelle
-.my_color_star{
-    color:#427ed1;
-}
-
-// margine destro 0
-.my_margin-r0{
-    margin-right: 0 !important;
-}
-
-// bordo basso
-.my_bb{
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 10px;
-}
-
-// spazio tra lettere di una parola
-.my_letter_spacing_5{
-    letter-spacing: 5px;
-}
-
-.my_font_size-12{
-    font-size: 12px;
-
-}
-    
-// padding sull'asse delle y
-.padding{
-    padding: 80px 0;
-}
-
-// larghezze
-.my_w200{
-    width: 200px;
-}
-
-.my_w100{
-    width: 100px;
-}
-
-.my_fs_13{
-    font-size: 13px;
-}
-
-.my_h100{
-    height: 100px;
-}
 

@@ -112,6 +112,7 @@ export default {
             color: #427ed1 !important;
         }
 
+        // formattazione a
         .second{
             color: #a0a5a5;
             font-weight: bold;
@@ -124,6 +125,7 @@ export default {
             }
         }
 
+        // formattazione contenitore menu con prodotti
         .img_drop_box{
             position: absolute;
             left: -565px;

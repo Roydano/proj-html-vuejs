@@ -89,10 +89,12 @@ export default {
 
     methods:{
 
+        // funzione per scorrere in avanti
         nextPhoto(){
             this.$refs.carousel.next()
         },
 
+        // funzione per scorrere indietro
         backPhoto(){
             this.$refs.carousel.prev()
         },
@@ -113,6 +115,7 @@ export default {
             display: none !important;
         }
 
+        // formattazione bottoni
         .btn_right{
             float: right;
             clear: both;
@@ -136,6 +139,7 @@ export default {
             }
         }
 
+        // formattazione carosello
         .img_box_carousel{
             position: relative;
             height: 260px;

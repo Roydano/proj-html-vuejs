@@ -12,8 +12,6 @@
       <Jumbotron/>
       <!-- fine jumbotron -->
 
-      <!-- <SliderProva/> -->
-
   </header>
 </template>
 
@@ -21,8 +19,6 @@
 import HeaderTop from '@/components/HeaderTop.vue'
 import HeaderBottom from '@/components/HeaderBottom.vue'
 import Jumbotron from '@/components/Jumbotron.vue'
-
-// import SliderProva from '@/components/SliderProva.vue'
 
 
 
@@ -32,9 +28,6 @@ export default {
         HeaderTop,
         HeaderBottom,
         Jumbotron,
-
-
-        // SliderProva
     }
 
 }

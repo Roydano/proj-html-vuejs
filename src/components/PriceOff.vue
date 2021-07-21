@@ -89,12 +89,12 @@ export default {
             .btn_choise{
             font-size: 13px;
 
-            &:hover{
-                background-color: rgba(255, 255, 255, 0);
-            }
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0);
+                }
             @include btnSelectShop()  
             
-        }
+            }
         }
     }
 
