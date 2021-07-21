@@ -1,23 +1,33 @@
 export default[
     {
         link: 'Home',
-        dropdown: 'Home1'
+        dropdown: ['Home1', 'Home2', 'Home2'],
+        img:''
     
     },
 
     {
         link: 'Shop',
-        dropdown: 'Home1'
+        dropdown: ['Shop Full Width', 'Shop With Sidebar'],
+        img:''
     },
 
     {
         link: 'Products',
-        dropdown: 'Home1'
+        dropdown:[
+            'Simple Product',
+            'Variable Product',
+            'Grouped Product',
+            'External/Affiliate Product',
+            'Digital Download',
+            'Classic Layout'
+        ],
+        img:''
     },
 
     {
         link: 'Categories',
-        dropdown: 'Home1'
+        dropdown: 'Home4'
     },
 
     {
@@ -27,7 +37,16 @@ export default[
 
     {
         link: 'Elements',
-        dropdown: 'Home1'
+        dropdown:[
+            'Featured Product Slider',
+            'Featured Products',
+            'Recent Products',
+            'Product Carousel',
+            'Product Categories',
+            'Product By Categoriy',
+            'Products By SKU/ID'
+        ],
+        img:'' 
     },
 
 

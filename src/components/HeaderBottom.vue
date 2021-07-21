@@ -1,7 +1,7 @@
 <template>
   <nav class="header_bottom">
     <div class="my_container">
-      <div class="row">
+      <div class="row align-items-center my_h100">
         <div class="col-12 d-flex justify-content-between">
 
           <!-- inizio sezione di sinistra con il logo -->
@@ -13,7 +13,7 @@
           <!-- inizio sezione di destra -->
           <div class="nav_bar d-flex">
             <!-- iniizo menu -->
-            <MenuList/>
+            <DropdownProva/>
             <!-- fine menu -->
 
             <!-- inizio bottone -->
@@ -40,13 +40,13 @@
 </template>
 
 <script>
-import MenuList from '@/components/MenuList.vue'
+import DropdownProva from '@/components/DropdownProva.vue'
 
 export default {
   name: 'HeaderBottom',
 
   components:{
-    MenuList
+    DropdownProva
   }
 
 }
@@ -57,7 +57,6 @@ export default {
   .header_bottom{
     height: 100px;
     border-bottom: 1px solid lightgrey;
-    line-height: 99px;
 
     // formattazione per il bottone
     .btn{
